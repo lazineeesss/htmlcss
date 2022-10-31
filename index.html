@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Практическая 2</title>
 </head>
-<body>
-	<h1 class="text-center" >Зачем нужен кодстайл в веб-вёрстке</h1>
+<body class="red">
+	<h1>Зачем нужен кодстайл в веб-вёрстке</h1>
 	<p>
 		Представьте, что к вам подошел иностранец и задал вопрос. Скажем, про <em>тонкий
 зелёный длинный</em> маленький предмет. Первая мысль, которая приходит в голову: все
@@ -22,15 +22,18 @@
 Для такой цели и был придуман <strong>кодстайл</strong> (набор правил и соглашений, используемых
 при написании исходного кода на некотором языке программирования).
 «Исходный код - это ответственность, а не актив!» - Эрик Ли
-У многих крупных компаний, таких как <a href="">Яндекс</a>, <a href="">Google</a>, рекомендации по оформлению
+У многих крупных компаний, таких как <a href="https://yandex.ru/" target="_blank">Яндекс</a>, <a href="https://drive.google.com/file/d/1nDmFpYGFe7vPABkw6FeeeXfIoUQnslxT/view" target="_blank">Google</a>, рекомендации по оформлению
 кода опубликованы и доступны всем желающим. В фирмах поменьше могут быть
 внутренние инструкции, иногда единый стиль кода оговаривается устно (бывает и
 такое).
 Наш курс по веб-вёрстке - не исключение, в нём также есть правила оформления. Он
 делится на три части, о которых ниже.
 	</p>
+	<figure>
 	<img src="img/img.png">
-	<h1>HTML</h1>
+	<figcaption>Как выглядит сайт кодстайл</figcaption>
+	</figure>
+	<h2>HTML</h2>
 	<p>Первая из частей - HTML. Это начальная стадия соблюдения кодстайла, ведь любой
 сайт вы начинаете писать именно с этого языка. Давайте посмотрим на основные
 правила:
@@ -47,66 +50,64 @@
 </ul>
 <p>Это лишь выжимка основного из всех правил, обязательно ознакомьтесь со всеми
 правилами и применяйте их.</p>
-<h1>CSS</h1>
+<h2>CSS</h2>
 <p>В CSS правил больше, потому что синтаксис там посложнее. Одно из важных, которое
 действительно поможет вам сохранить ваш код в идеальном виде - порядок свойств.
 Давайте посмотрим, как это выглядит</p>
 <p>Порядок написания CSS-свойств</p>
 
-<table>
+<table border="1z" cellspasing="0" cellpadding="0" class="table">
     <tr>
         <th>Порядок</th>
-        <th>Группа свойств</th>
+        <th>Группа свойств </th>
         <th>Используемые свойства</th>
     </tr>
     <tr>
         <td>1</td>
-        <td>Позиционирование</td>
+        <td>Позиционирование </td>
         <td>position: relative;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;</td>
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;</td>
     </tr>
     <tr>
-    	<td>2</td>
-    	<td>Блочная модель</td>
-    	<td>display: flex;
-align-items: center;
-margin: 10px;
-padding: 10px 20px;
-border: 1px solid red;
-width: 200px;
-height: 100px;
-box-sizing: border-box;</td>
-
+        <td>2</td>
+        <td>Блочная модель</td>
+        <td>display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 1px solid red;
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;</td>
     </tr>
     <tr>
-    	<td>3</td>
-    	<td>Типографика </td>
-    	<td>font-family: Arial;
-font-size: 25px;
-font-style: italic;
-text-decoration: none;
-color: red;</td>
-
+        <td>3</td>
+        <td>Типографика</td>
+        <td>font-family: Arial;
+            font-size: 25px;
+            font-style: italic;
+            text-decoration: none;
+            color: red;
+            </td>
     </tr>
     <tr>
-    	<td>4</td>
-    	<td>Оформление</td>
-    	<td>background: red;
-opacity: 1;</td>
-
+        <td>4</td>
+        <td>Оформление</td>
+        <td>background: red;
+ непрозрачность: 1;</td>
     </tr>
     <tr>
-    	<td>5</td>
-<td>Анимации</td>
-<td>transform: translateX(5px);
-animation: shake 0.3s infinite;</td>
+        <td>5</td>
+        <td>Анимации</td>
+        <td>преобразование: translateX(5 пикселей);
+ анимация: встряхивание 0,3 с бесконечно;</td>
     </tr>
 </table>
 
-<h1>JS</h1>
+<h2>JS</h2>
 <p>Правила JS не сильно отличаются от HTML и CSS, разве что само применение зависит
 от итогового синтаксиса. Например, есть такие правила, присущие только для JS, как:
 </p>
